@@ -1,3 +1,5 @@
+# git-hooksDemo
+
 ### Git hooks & Nodejs & husky
 
 ### check code style
@@ -15,4 +17,4 @@ npm run checkFileSize
 git commit -m "HEELO- first commit"
 ```
 
-When you type command `git commit -m "HEELO- first commit"`, husky may trigger hooks  `pre-commit` and `commit-msg`。
+When you type command `git commit -m "HEELO- first commit"`, husky may trigger hooks  `pre-commit` and `commit-msg`.
