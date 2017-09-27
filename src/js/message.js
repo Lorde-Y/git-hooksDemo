@@ -8,7 +8,7 @@
   }
 })(window, function () {
   function Message (opts) {
-    console.log(opts)
+    console.log(opts);
     this.cls = opts.cls || 'helloworld';
     this.title = opts.title || '提示';
     this.message = opts.message || '此操作将永久删除该文件, 是否继续?';

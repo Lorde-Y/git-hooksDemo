@@ -3,10 +3,16 @@
   "version": "1.0.0",
   "description": "git hooks & husky & Node",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Lorde-Y/git-hooksDemo.git"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "eslint": "eslint src/**/*.js",
-    "precommit": "npm run eslint"
+    "checkFileSize": "cd tools && node checkfilesize.js",
+    "precommit": "npm run eslint && npm run checkFileSize",
+    "commitmsg": "cd tools && node checkcommitmsg.js ${GIT_PARAMS}"
   },
   "keywords": [
     "git",
